@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+	<h1>factorial</h1>
+</center>
+<p id="z1"></p>
+<script>
+var n,n1;
+ n1=window.prompt("enter n");
+ n=parseInt(n1);
+ function fact(n)
+   { 
+      if(n==0 || n==1)
+        {
+          return 1;
+        }else {
+            return n*fact(n-1);
+              }
+   
+   
+   };
+ function show()
+  {
+  document.getElementById("z1").innerHTML=fact(n);
+ };
+</script>
+<center>
+	<button onclick="show()">Try it</button>
+</center>
+</body>
+</html>
+

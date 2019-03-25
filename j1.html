@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function myFunction() {
+  var a,b,c;
+  a=window.prompt("enter a=");
+  b=window.prompt("enter b=");
+  a=parseInt(a);
+  b=parseInt(b);
+  c=a+b;
+  //document.writeln(c);
+  //return c;
+  document.getElementById("x1").innerHTML = c;
+  update(c);
+}
+function update(c){	
+  document.getElementById("x1").innerHTML = c;
+}
+</script>
+</head>
+<body>
+
+<h1>A Web Page</h1>
+<p>A Paragraph</p>
+<p id="x1"></p>
+
+<button onclick="myFunction()">Try it</button>
+
+</body>
+</html>

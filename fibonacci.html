@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonacci Series</title>
+	<script>
+		function fib(n){
+			
+			if(n==1){
+				return 0;
+			}
+			else if(n==2){
+				return 1;
+			}
+			else{
+				return(fib(n-1)+fib(n-2));
+			}
+		};
+
+		function main(){
+
+			var num = prompt("Enter the range of the series:");
+			parseInt(num);
+			
+			if(num<=0){
+				window.alert("Invalid Input!!!");
+			}
+			else{
+			
+				for(i=1;i<=num;i++){
+					document.write(" ",fib(i));
+				}
+			}
+		};
+	</script>
+</head>
+<body>
+	<center><u><h1>FIBONACCI SERIES PRINTER</h1></u>
+	<button type="button" onclick="main()">GO</button></center>
+
+
+</body>
+</html>
